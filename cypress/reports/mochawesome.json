@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-06T01:32:18.119Z",
+    "end": "2023-07-06T01:32:37.435Z",
+    "duration": 19316,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca11c61f-11ca-4b23-9ced-5a9b916711fa",
+      "title": "",
+      "fullFile": "cypress/integration/login.ts",
+      "file": "cypress/integration/login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Test LOGIN",
+          "fullTitle": "Test LOGIN",
+          "timedOut": null,
+          "duration": 6106,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, testData_json_1.default.username, testData_json_1.default.password);\nloginPage.assertLogin();",
+          "err": {},
+          "uuid": "26307363-fc08-4023-9e6c-38267e32c4de",
+          "parentUUID": "ca11c61f-11ca-4b23-9ced-5a9b916711fa",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Invalid Password",
+          "fullTitle": "Test Sauce Demo Invalid Password",
+          "timedOut": null,
+          "duration": 1171,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, testData_json_1.default.username, 'invalidPass');\nloginPage.assertLoginFail();",
+          "err": {},
+          "uuid": "96929c19-e674-43d4-bdb8-470f096b7ca1",
+          "parentUUID": "ca11c61f-11ca-4b23-9ced-5a9b916711fa",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Sauce labs product backpack",
+          "fullTitle": "Test Sauce Demo Sauce labs product backpack",
+          "timedOut": null,
+          "duration": 1799,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, testData_json_1.default.username, testData_json_1.default.password);\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();",
+          "err": {},
+          "uuid": "dc566707-3e93-4284-9817-301587acb089",
+          "parentUUID": "ca11c61f-11ca-4b23-9ced-5a9b916711fa",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Add Item to Shopping Cart",
+          "fullTitle": "Test Add Item to Shopping Cart",
+          "timedOut": null,
+          "duration": 1852,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, testData_json_1.default.username, testData_json_1.default.password);\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();\ndashboardPage.addToCart();",
+          "err": {},
+          "uuid": "ec19f6e0-ab89-4cba-96ba-c632d92cff20",
+          "parentUUID": "ca11c61f-11ca-4b23-9ced-5a9b916711fa",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Remove Item from Shopping Cart",
+          "fullTitle": "Test Remove Item from Shopping Cart",
+          "timedOut": null,
+          "duration": 1521,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, testData_json_1.default.username, testData_json_1.default.password);\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();\n//dashboardPage.addToCart()\ndashboardPage.removeFromCart();",
+          "err": {},
+          "uuid": "7d828b86-72f8-4910-a7b8-4c048ee99c1c",
+          "parentUUID": "ca11c61f-11ca-4b23-9ced-5a9b916711fa",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Create Order",
+          "fullTitle": "Test Create Order",
+          "timedOut": null,
+          "duration": 4066,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, testData_json_1.default.username, testData_json_1.default.password);\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();\ndashboardPage.addToCart();\ndashboardPage.clickShoppingCart();\norderPage.createOrder();\norderPage.assertOrder();",
+          "err": {},
+          "uuid": "9c459582-4396-441a-ab20-97f3bc28d4f3",
+          "parentUUID": "ca11c61f-11ca-4b23-9ced-5a9b916711fa",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "26307363-fc08-4023-9e6c-38267e32c4de",
+        "96929c19-e674-43d4-bdb8-470f096b7ca1",
+        "dc566707-3e93-4284-9817-301587acb089",
+        "ec19f6e0-ab89-4cba-96ba-c632d92cff20",
+        "7d828b86-72f8-4910-a7b8-4c048ee99c1c",
+        "9c459582-4396-441a-ab20-97f3bc28d4f3"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 16515,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
